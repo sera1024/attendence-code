@@ -93,11 +93,6 @@
     setTimeout(() => el.remove(), kind === 'error' ? 4500 : 2600);
   }
 
-  const store = {
-    get(k) { try { return localStorage.getItem(k); } catch { return null; } },
-    set(k, v) { try { localStorage.setItem(k, v); } catch { /* 무시 */ } },
-  };
-
   /* ------------------------------------------------------------------ *
    *  로그인 / 회원가입
    * ------------------------------------------------------------------ */
@@ -190,10 +185,8 @@
     if (state.user && state.user.id === user.id) return; // 토큰 갱신 등
     state.user = user;
     show('app');
-    const last = store.get('acs:lastCourse');
-    if (last && !$('#form-upload').course.value) $('#form-upload').course.value = last;
     try {
-      await Promise.all([loadProfile(), loadStats(), loadCodes()]);
+      await Promise.all([loadProfile(), loadStats(), loadCodes(), loadCourses()]);
     } catch (err) {
       toast(`불러오기 실패: ${err.message || err}`, 'error');
     }
@@ -201,6 +194,10 @@
   }
 
   function teardown() {
+    courseRequest++;
+    courseRows = [];
+    coursesLoaded = false;
+    renderCourses();
     if (state.channel) sb.removeChannel(state.channel);
     Object.assign(state, {
       user: null, nickname: '', channel: null, subscribedOnce: false,
@@ -374,7 +371,7 @@
     $('#empty').textContent = state.filter
       ? '검색한 과목의 코드가 없어요.'
       : '아직 유효한 코드가 없어요. 첫 코드를 올려 보세요.';
-    renderCourseList();
+
   }
 
   function refreshCard(id) {
@@ -481,16 +478,55 @@
     if (changed) renderAll();
   }, 1000);
 
-  function renderCourseList() {
-    const courses = new Set([...state.codes.values()].map((r) => r.course));
-    const last = store.get('acs:lastCourse');
-    if (last) courses.add(last);
-    const dl = $('#course-list');
-    const key = [...courses].sort().join('\u0000');
-    if (dl.dataset.key === key) return;
-    dl.dataset.key = key;
-    dl.replaceChildren(...[...courses].sort().map((c) => h('option', { value: c })));
+  let courseRows = [];
+  let courseRequest = 0;
+  let submitting = false;
+  let coursesLoaded = false;
+
+  function renderCourses() {
+    const select = $('#course-select');
+    const previous = select.value;
+    const campus = $('#campus-filter').value;
+    const rows = courseRows.filter(r => !campus || r.campus === campus);
+    select.replaceChildren(h('option', { value: '', text: rows.length ? '수업을 선택하세요' : '현재 시간대의 수업이 없어요' }));
+    rows.forEach(r => select.append(h('option', {
+      value: String(r.id),
+      text: `${r.course_name} · ${r.course_code}-${r.section} · ${r.campus} · ${r.starts_at.slice(0,5)}–${r.ends_at.slice(0,5)}${r.instructor ? ' · ' + r.instructor : ''}`,
+    })));
+    if (rows.some(r => String(r.id) === previous)) select.value = previous;
+    select.disabled = !coursesLoaded || !rows.length || submitting;
+    $('#upload-submit').disabled = !coursesLoaded || !select.value || submitting;
   }
+
+  async function loadCourses() {
+    if (!state.user) return;
+    const request = ++courseRequest;
+    const userId = state.user.id;
+    coursesLoaded = false;
+    renderCourses();
+    $('#course-status').textContent = '시간표 확인 중…';
+    try {
+      const { data, error } = await sb.rpc('current_course_meetings');
+      if (error) throw error;
+      if (request !== courseRequest || state.user?.id !== userId) return;
+      courseRows = data || [];
+      coursesLoaded = true;
+      $('#course-status').textContent = courseRows.length
+        ? `현재 수업 후보 ${courseRows.length}개 · 서버 시각 기준 (1분마다 갱신)`
+        : '등록된 시간표에 현재 수업이 없어요. 시간표 미등록·방학·휴강일일 수 있어요.';
+    } catch (err) {
+      if (request !== courseRequest || state.user?.id !== userId) return;
+      courseRows = [];
+      $('#course-status').textContent = '시간표를 불러오지 못했어요. 새로고침해 주세요. 계속 실패하면 운영자가 시간표 DB 설정을 확인해야 해요.';
+    }
+    renderCourses();
+  }
+  $('#campus-filter').addEventListener('change', renderCourses);
+  $('#course-select').addEventListener('change', () => {
+    $('#upload-submit').disabled = !coursesLoaded || !$('#course-select').value || submitting;
+  });
+  $('#refresh-courses').addEventListener('click', loadCourses);
+  setInterval(loadCourses, 60000);
 
   /* ------------------------------------------------------------------ *
    *  동작: 올리기 / 열기 / 평가
@@ -502,19 +538,21 @@
 
   uploadForm.addEventListener('submit', async (e) => {
     e.preventDefault();
-    const course = uploadForm.course.value.trim().replace(/\s+/g, ' ');
+    const meetingId = uploadForm.course.value;
     const code = uploadForm.code.value.trim();
     const minutes = Number(uploadForm.minutes.value);
-    if (!course) return toast('과목명을 입력해 주세요.', 'error');
+    if (submitting) return;
+    if (!coursesLoaded || !meetingId) return toast('현재 수업 후보에서 과목을 선택해 주세요.', 'error');
     if (!/^\d{4}$/.test(code)) return toast('출석 코드는 숫자 4자리예요.', 'error');
 
     const btn = $('#upload-submit');
+    submitting = true;
+    renderCourses();
     btn.disabled = true;
     try {
-      const { data, error } = await sb.rpc('submit_code', { p_course: course, p_code: code, p_minutes: minutes });
+      const { data, error } = await sb.rpc('submit_scheduled_code', { p_meeting_id: meetingId, p_code: code, p_minutes: minutes });
       if (error) throw error;
       state.secrets.set(data.id, data.code);
-      store.set('acs:lastCourse', course);
       uploadForm.code.value = '';
       uploadForm.minutes.value = '10';
       if (!state.codes.has(data.id)) {
@@ -527,7 +565,8 @@
     } catch (err) {
       toast(err.message || '올리지 못했어요.', 'error');
     } finally {
-      btn.disabled = false;
+      submitting = false;
+      await loadCourses();
     }
   });
 
@@ -563,6 +602,7 @@
   // 탭이 잠들었다 깨면 놓친 변경을 다시 동기화
   document.addEventListener('visibilitychange', () => {
     if (document.visibilityState === 'visible' && state.user) {
+      loadCourses();
       loadCodes().catch(() => {});
       loadStats().catch(() => {});
     }
