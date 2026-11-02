@@ -58,7 +58,11 @@ begin
   if not found then
     raise exception '현재 선택 가능한 수업이 아닙니다. 시간표를 새로고침해 주세요.' using errcode='22023';
   end if;
-  label := m.semester || ' ' || m.campus || ' ' || m.course_code || '-' || m.section || ' ' || m.course_name;
+  label := m.semester || ' ' || m.campus || ' ' ||
+    case when m.course_code like 'HWP-%' then
+      m.course_name || ' (' || m.instructor || ') ' ||
+      case when m.section = '-' then '분반 미표기' else m.section || '분반' end
+    else m.course_code || '-' || m.section || ' ' || m.course_name end;
   result := public.submit_code(label, p_code, p_minutes);
   update public.codes set meeting_id = m.id where id = (result->>'id')::bigint;
   return result;

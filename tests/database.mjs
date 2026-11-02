@@ -58,4 +58,22 @@ assert.equal((await db.query('select * from public.current_course_meetings()')).
 await rejected("select public.submit_scheduled_code(1,'0123',10)",/로그인이 필요/);
 await db.exec('rollback');
 console.log('PASS: timing boundaries, distinct sections, credits, duplicates, forged IDs, permissions, holidays, anonymous requests');
+const seed = fs.readFileSync(new URL('data/spa-2026-2.sql', root), 'utf8');
+await db.exec(seed); await db.exec(seed);
+assert.equal((await db.query('select count(*)::int as n from public.course_meetings')).rows[0].n,37);
+assert.equal((await db.query("select count(*)::int as n from public.course_meetings where course_name='창업과진로'")).rows[0].n,4);
+const selector = migration.match(/create or replace function public.current_course_meetings\(\)[\s\S]*?\$\$;/)[0];
+await db.exec("select set_config('request.jwt.claim.sub','00000000-0000-0000-0000-000000000001',false)");
+async function at(kst) {
+  await db.exec(selector.replaceAll('now()', `timestamptz '${kst}+09:00'`));
+  return (await db.query('select course_name, section from public.current_course_meetings()')).rows;
+}
+assert.deepEqual(new Set((await at('2026-11-02 15:00:00')).map(x=>x.course_name)),new Set(['정부관리세미나','지방정부론']));
+assert.equal((await at('2026-11-02 16:50:00')).length,1);
+assert.equal((await at('2026-11-02 17:50:00')).length,0);
+assert.equal((await at('2026-10-09 09:30:00')).length,0);
+assert.equal((await at('2026-12-21 15:00:00')).length,0);
+assert.equal((await at('2026-11-05 16:50:00')).filter(x=>x.course_name==='창업과진로').length,4);
+assert.equal((await at('2026-11-06 09:00:00')).length,2);
+console.log('PASS: HWP dataset repeated import, 37 meetings, four parallel sections, Monday/Thursday/Friday candidates, holidays and vacation');
 await db.close();

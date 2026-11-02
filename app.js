@@ -489,10 +489,14 @@
     const campus = $('#campus-filter').value;
     const rows = courseRows.filter(r => !campus || r.campus === campus);
     select.replaceChildren(h('option', { value: '', text: rows.length ? '수업을 선택하세요' : '현재 시간대의 수업이 없어요' }));
-    rows.forEach(r => select.append(h('option', {
-      value: String(r.id),
-      text: `${r.course_name} · ${r.course_code}-${r.section} · ${r.campus} · ${r.starts_at.slice(0,5)}–${r.ends_at.slice(0,5)}${r.instructor ? ' · ' + r.instructor : ''}`,
-    })));
+    rows.forEach(r => {
+      const section = r.section === '-' ? '분반 미표기' : `${r.section}분반`;
+      const identity = r.course_code.startsWith('HWP-') ? section : `${r.course_code} · ${section}`;
+      select.append(h('option', {
+        value: String(r.id),
+        text: `${r.course_name} · ${identity} · ${r.campus} · ${r.starts_at.slice(0,5)}–${r.ends_at.slice(0,5)}${r.instructor ? ' · ' + r.instructor : ''}`,
+      }));
+    });
     if (rows.some(r => String(r.id) === previous)) select.value = previous;
     select.disabled = !coursesLoaded || !rows.length || submitting;
     $('#upload-submit').disabled = !coursesLoaded || !select.value || submitting;
