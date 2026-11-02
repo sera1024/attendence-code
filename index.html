@@ -69,11 +69,16 @@
         <span class="muted small">올리면 열람권 +1</span>
       </div>
       <form id="form-upload" class="upload-grid" novalidate>
-        <label class="field course">
-          <span>과목 / 분반</span>
-          <input name="course" list="course-list" maxlength="40" required placeholder="예: 자료구조 01분반" autocomplete="off" />
-          <datalist id="course-list"></datalist>
-        </label>
+        <div class="field course">
+          <label for="course-select">현재 수업 후보 · 과목 / 분반</label>
+          <div class="course-tools">
+            <select id="campus-filter" aria-label="캠퍼스"><option value="">전체 캠퍼스</option><option>서울</option><option>세종</option></select>
+            <button type="button" class="btn ghost sm" id="refresh-courses">새로고침</button>
+          </div>
+          <select name="course" id="course-select" required disabled><option value="">시간표를 불러오는 중…</option></select>
+          <small class="muted" id="course-status" role="status" aria-live="polite"></small>
+          <small class="muted">한국 시간 · 시작 10분 전부터 종료까지. 실제 출석 공지 여부는 수업에서 확인하세요.</small>
+        </div>
         <label class="field code">
           <span>출석 코드</span>
           <input name="code" class="code-input" inputmode="numeric" pattern="[0-9]{4}" maxlength="4" required placeholder="0000" autocomplete="off" />

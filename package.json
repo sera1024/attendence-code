@@ -1,0 +1,10 @@
+{
+  "name": "attendance-code",
+  "private": true,
+  "scripts": {
+    "test": "node --check app.js && node tests/database.mjs && python3 -m unittest discover -s tests -v"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "0.5.14"
+  }
+}

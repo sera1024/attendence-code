@@ -1,0 +1,712 @@
+{
+  "scope": "고려대학교 세종캠퍼스 정부행정학부 · 2026-2 · 2026-07-30 기준",
+  "source_file": "2026학년도 2학기 강의시간표.hwp",
+  "source_sha256": "89df8260490448cb327ca384a7a8b8875e48a551133b634066260764cd96829a",
+  "source_url": "https://spa.korea.ac.kr/spa/4479/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGc3BhJTJGMTQ5JTJGMjcxNDM4JTJGYXJ0Y2xWaWV3LmRvJTNG",
+  "calendar_url": "https://digb.korea.ac.kr/dhe/14117/subview.do",
+  "excluded_dates": [
+    "2026-09-24",
+    "2026-09-25",
+    "2026-09-26",
+    "2026-10-03",
+    "2026-10-05",
+    "2026-10-09"
+  ],
+  "notes": [
+    "전체 대학 개설과목이 아닌 해당 학부 자료",
+    "HWP- 접두사는 로컬 ID이며 공식 학수번호 아님",
+    "section=-는 분반 미표기이며 01분반을 뜻하지 않음",
+    "연속 교시는 10분 휴식 시간을 포함한 한 수업 구간으로 병합",
+    "창업과진로는 통합운영 안내와 분반별 강의실을 함께 보존",
+    "휴강·보강 및 7월 30일 이후 정정은 별도 확인 필요"
+  ],
+  "meetings": [
+    {
+      "semester": "2026-2",
+      "campus": "세종",
+      "course_code": "HWP-5d3f6751a8fd",
+      "section": "-",
+      "course_name": "정책과철학",
+      "instructor": "강영철",
+      "weekday": 1,
+      "starts_at": "11:00",
+      "ends_at": "11:50",
+      "valid_from": "2026-09-01",
+      "valid_until": "2026-12-18",
+      "source_url": "https://spa.korea.ac.kr/spa/4479/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGc3BhJTJGMTQ5JTJGMjcxNDM4JTJGYXJ0Y2xWaWV3LmRvJTNG",
+      "room": "2-108",
+      "source_periods": [
+        3
+      ]
+    },
+    {
+      "semester": "2026-2",
+      "campus": "세종",
+      "course_code": "HWP-10144201b994",
+      "section": "-",
+      "course_name": "범죄수사학",
+      "instructor": "강영철",
+      "weekday": 1,
+      "starts_at": "12:00",
+      "ends_at": "12:50",
+      "valid_from": "2026-09-01",
+      "valid_until": "2026-12-18",
+      "source_url": "https://spa.korea.ac.kr/spa/4479/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGc3BhJTJGMTQ5JTJGMjcxNDM4JTJGYXJ0Y2xWaWV3LmRvJTNG",
+      "room": "2-108",
+      "source_periods": [
+        4
+      ]
+    },
+    {
+      "semester": "2026-2",
+      "campus": "세종",
+      "course_code": "HWP-a7cd69221902",
+      "section": "-",
+      "course_name": "도시및지역개발론",
+      "instructor": "김상봉",
+      "weekday": 1,
+      "starts_at": "13:00",
+      "ends_at": "13:50",
+      "valid_from": "2026-09-01",
+      "valid_until": "2026-12-18",
+      "source_url": "https://spa.korea.ac.kr/spa/4479/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGc3BhJTJGMTQ5JTJGMjcxNDM4JTJGYXJ0Y2xWaWV3LmRvJTNG",
+      "room": "2-226",
+      "source_periods": [
+        5
+      ]
+    },
+    {
+      "semester": "2026-2",
+      "campus": "세종",
+      "course_code": "HWP-8b3df6fa8a85",
+      "section": "-",
+      "course_name": "시민사회와자치",
+      "instructor": "김상봉",
+      "weekday": 1,
+      "starts_at": "14:00",
+      "ends_at": "14:50",
+      "valid_from": "2026-09-01",
+      "valid_until": "2026-12-18",
+      "source_url": "https://spa.korea.ac.kr/spa/4479/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGc3BhJTJGMTQ5JTJGMjcxNDM4JTJGYXJ0Y2xWaWV3LmRvJTNG",
+      "room": "2-226",
+      "source_periods": [
+        6
+      ]
+    },
+    {
+      "semester": "2026-2",
+      "campus": "세종",
+      "course_code": "HWP-3e599cb3ab0f",
+      "section": "-",
+      "course_name": "정부관리세미나",
+      "instructor": "배효성",
+      "weekday": 1,
+      "starts_at": "15:00",
+      "ends_at": "17:50",
+      "valid_from": "2026-09-01",
+      "valid_until": "2026-12-18",
+      "source_url": "https://spa.korea.ac.kr/spa/4479/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGc3BhJTJGMTQ5JTJGMjcxNDM4JTJGYXJ0Y2xWaWV3LmRvJTNG",
+      "room": "2-226",
+      "source_periods": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "semester": "2026-2",
+      "campus": "세종",
+      "course_code": "HWP-e0fddbfdc3e4",
+      "section": "-",
+      "course_name": "지방정부론",
+      "instructor": "강영철",
+      "weekday": 1,
+      "starts_at": "15:00",
+      "ends_at": "16:50",
+      "valid_from": "2026-09-01",
+      "valid_until": "2026-12-18",
+      "source_url": "https://spa.korea.ac.kr/spa/4479/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGc3BhJTJGMTQ5JTJGMjcxNDM4JTJGYXJ0Y2xWaWV3LmRvJTNG",
+      "room": "2-108",
+      "source_periods": [
+        7,
+        8
+      ]
+    },
+    {
+      "semester": "2026-2",
+      "campus": "세종",
+      "course_code": "HWP-10144201b994",
+      "section": "-",
+      "course_name": "범죄수사학",
+      "instructor": "강영철",
+      "weekday": 2,
+      "starts_at": "10:00",
+      "ends_at": "11:50",
+      "valid_from": "2026-09-01",
+      "valid_until": "2026-12-18",
+      "source_url": "https://spa.korea.ac.kr/spa/4479/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGc3BhJTJGMTQ5JTJGMjcxNDM4JTJGYXJ0Y2xWaWV3LmRvJTNG",
+      "room": "2-108",
+      "source_periods": [
+        2,
+        3
+      ]
+    },
+    {
+      "semester": "2026-2",
+      "campus": "세종",
+      "course_code": "HWP-a7cd69221902",
+      "section": "-",
+      "course_name": "도시및지역개발론",
+      "instructor": "김상봉",
+      "weekday": 2,
+      "starts_at": "13:00",
+      "ends_at": "14:50",
+      "valid_from": "2026-09-01",
+      "valid_until": "2026-12-18",
+      "source_url": "https://spa.korea.ac.kr/spa/4479/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGc3BhJTJGMTQ5JTJGMjcxNDM4JTJGYXJ0Y2xWaWV3LmRvJTNG",
+      "room": "2-226",
+      "source_periods": [
+        5,
+        6
+      ]
+    },
+    {
+      "semester": "2026-2",
+      "campus": "세종",
+      "course_code": "HWP-c30bf26bb87b",
+      "section": "-",
+      "course_name": "행동행정학",
+      "instructor": "김다니",
+      "weekday": 2,
+      "starts_at": "13:00",
+      "ends_at": "13:50",
+      "valid_from": "2026-09-01",
+      "valid_until": "2026-12-18",
+      "source_url": "https://spa.korea.ac.kr/spa/4479/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGc3BhJTJGMTQ5JTJGMjcxNDM4JTJGYXJ0Y2xWaWV3LmRvJTNG",
+      "room": "2-221",
+      "source_periods": [
+        5
+      ]
+    },
+    {
+      "semester": "2026-2",
+      "campus": "세종",
+      "course_code": "HWP-e0fddbfdc3e4",
+      "section": "-",
+      "course_name": "지방정부론",
+      "instructor": "강영철",
+      "weekday": 2,
+      "starts_at": "14:00",
+      "ends_at": "14:50",
+      "valid_from": "2026-09-01",
+      "valid_until": "2026-12-18",
+      "source_url": "https://spa.korea.ac.kr/spa/4479/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGc3BhJTJGMTQ5JTJGMjcxNDM4JTJGYXJ0Y2xWaWV3LmRvJTNG",
+      "room": "2-108",
+      "source_periods": [
+        6
+      ]
+    },
+    {
+      "semester": "2026-2",
+      "campus": "세종",
+      "course_code": "HWP-594587be3351",
+      "section": "02",
+      "course_name": "행정학의이해",
+      "instructor": "김다니",
+      "weekday": 2,
+      "starts_at": "15:00",
+      "ends_at": "16:50",
+      "valid_from": "2026-09-01",
+      "valid_until": "2026-12-18",
+      "source_url": "https://spa.korea.ac.kr/spa/4479/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGc3BhJTJGMTQ5JTJGMjcxNDM4JTJGYXJ0Y2xWaWV3LmRvJTNG",
+      "room": "2-226",
+      "source_periods": [
+        7,
+        8
+      ]
+    },
+    {
+      "semester": "2026-2",
+      "campus": "세종",
+      "course_code": "HWP-5d3f6751a8fd",
+      "section": "-",
+      "course_name": "정책과철학",
+      "instructor": "강영철",
+      "weekday": 2,
+      "starts_at": "15:00",
+      "ends_at": "16:50",
+      "valid_from": "2026-09-01",
+      "valid_until": "2026-12-18",
+      "source_url": "https://spa.korea.ac.kr/spa/4479/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGc3BhJTJGMTQ5JTJGMjcxNDM4JTJGYXJ0Y2xWaWV3LmRvJTNG",
+      "room": "2-108",
+      "source_periods": [
+        7,
+        8
+      ]
+    },
+    {
+      "semester": "2026-2",
+      "campus": "세종",
+      "course_code": "HWP-59728ab6da12",
+      "section": "01",
+      "course_name": "행정학의이해",
+      "instructor": "임준형",
+      "weekday": 3,
+      "starts_at": "11:00",
+      "ends_at": "12:50",
+      "valid_from": "2026-09-01",
+      "valid_until": "2026-12-18",
+      "source_url": "https://spa.korea.ac.kr/spa/4479/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGc3BhJTJGMTQ5JTJGMjcxNDM4JTJGYXJ0Y2xWaWV3LmRvJTNG",
+      "room": "2-226",
+      "source_periods": [
+        3,
+        4
+      ]
+    },
+    {
+      "semester": "2026-2",
+      "campus": "세종",
+      "course_code": "HWP-594587be3351",
+      "section": "02",
+      "course_name": "행정학의이해",
+      "instructor": "김다니",
+      "weekday": 3,
+      "starts_at": "13:00",
+      "ends_at": "13:50",
+      "valid_from": "2026-09-01",
+      "valid_until": "2026-12-18",
+      "source_url": "https://spa.korea.ac.kr/spa/4479/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGc3BhJTJGMTQ5JTJGMjcxNDM4JTJGYXJ0Y2xWaWV3LmRvJTNG",
+      "room": "2-226",
+      "source_periods": [
+        5
+      ]
+    },
+    {
+      "semester": "2026-2",
+      "campus": "세종",
+      "course_code": "HWP-f8c64de68200",
+      "section": "-",
+      "course_name": "정부조직관리론",
+      "instructor": "임준형",
+      "weekday": 3,
+      "starts_at": "14:00",
+      "ends_at": "14:50",
+      "valid_from": "2026-09-01",
+      "valid_until": "2026-12-18",
+      "source_url": "https://spa.korea.ac.kr/spa/4479/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGc3BhJTJGMTQ5JTJGMjcxNDM4JTJGYXJ0Y2xWaWV3LmRvJTNG",
+      "room": "2-226",
+      "source_periods": [
+        6
+      ]
+    },
+    {
+      "semester": "2026-2",
+      "campus": "세종",
+      "course_code": "HWP-c30bf26bb87b",
+      "section": "-",
+      "course_name": "행동행정학",
+      "instructor": "김다니",
+      "weekday": 3,
+      "starts_at": "15:00",
+      "ends_at": "16:50",
+      "valid_from": "2026-09-01",
+      "valid_until": "2026-12-18",
+      "source_url": "https://spa.korea.ac.kr/spa/4479/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGc3BhJTJGMTQ5JTJGMjcxNDM4JTJGYXJ0Y2xWaWV3LmRvJTNG",
+      "room": "2-226",
+      "source_periods": [
+        7,
+        8
+      ]
+    },
+    {
+      "semester": "2026-2",
+      "campus": "세종",
+      "course_code": "HWP-f4dd3fd82045",
+      "section": "-",
+      "course_name": "정책학특강",
+      "instructor": "이수연",
+      "weekday": 3,
+      "starts_at": "15:00",
+      "ends_at": "16:50",
+      "valid_from": "2026-09-01",
+      "valid_until": "2026-12-18",
+      "source_url": "https://spa.korea.ac.kr/spa/4479/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGc3BhJTJGMTQ5JTJGMjcxNDM4JTJGYXJ0Y2xWaWV3LmRvJTNG",
+      "room": "2-220",
+      "source_periods": [
+        7,
+        8
+      ]
+    },
+    {
+      "semester": "2026-2",
+      "campus": "세종",
+      "course_code": "HWP-cc5baee11c55",
+      "section": "-",
+      "course_name": "미래인재의자기경영과리더십개발",
+      "instructor": "오정록",
+      "weekday": 3,
+      "starts_at": "17:00",
+      "ends_at": "17:50",
+      "valid_from": "2026-09-01",
+      "valid_until": "2026-12-18",
+      "source_url": "https://spa.korea.ac.kr/spa/4479/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGc3BhJTJGMTQ5JTJGMjcxNDM4JTJGYXJ0Y2xWaWV3LmRvJTNG",
+      "room": "2-223",
+      "source_periods": [
+        9
+      ]
+    },
+    {
+      "semester": "2026-2",
+      "campus": "세종",
+      "course_code": "HWP-3ad8959144c4",
+      "section": "-",
+      "course_name": "[서비스러닝]행정과리더십",
+      "instructor": "오정록",
+      "weekday": 4,
+      "starts_at": "09:00",
+      "ends_at": "10:50",
+      "valid_from": "2026-09-01",
+      "valid_until": "2026-12-18",
+      "source_url": "https://spa.korea.ac.kr/spa/4479/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGc3BhJTJGMTQ5JTJGMjcxNDM4JTJGYXJ0Y2xWaWV3LmRvJTNG",
+      "room": "2-108",
+      "source_periods": [
+        1,
+        2
+      ]
+    },
+    {
+      "semester": "2026-2",
+      "campus": "세종",
+      "course_code": "HWP-59728ab6da12",
+      "section": "01",
+      "course_name": "행정학의이해",
+      "instructor": "임준형",
+      "weekday": 4,
+      "starts_at": "10:00",
+      "ends_at": "10:50",
+      "valid_from": "2026-09-01",
+      "valid_until": "2026-12-18",
+      "source_url": "https://spa.korea.ac.kr/spa/4479/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGc3BhJTJGMTQ5JTJGMjcxNDM4JTJGYXJ0Y2xWaWV3LmRvJTNG",
+      "room": "2-226",
+      "source_periods": [
+        2
+      ]
+    },
+    {
+      "semester": "2026-2",
+      "campus": "세종",
+      "course_code": "HWP-f8c64de68200",
+      "section": "-",
+      "course_name": "정부조직관리론",
+      "instructor": "임준형",
+      "weekday": 4,
+      "starts_at": "11:00",
+      "ends_at": "12:50",
+      "valid_from": "2026-09-01",
+      "valid_until": "2026-12-18",
+      "source_url": "https://spa.korea.ac.kr/spa/4479/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGc3BhJTJGMTQ5JTJGMjcxNDM4JTJGYXJ0Y2xWaWV3LmRvJTNG",
+      "room": "2-226",
+      "source_periods": [
+        3,
+        4
+      ]
+    },
+    {
+      "semester": "2026-2",
+      "campus": "세종",
+      "course_code": "HWP-3ad8959144c4",
+      "section": "-",
+      "course_name": "[서비스러닝]행정과리더십",
+      "instructor": "오정록",
+      "weekday": 4,
+      "starts_at": "12:00",
+      "ends_at": "12:50",
+      "valid_from": "2026-09-01",
+      "valid_until": "2026-12-18",
+      "source_url": "https://spa.korea.ac.kr/spa/4479/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGc3BhJTJGMTQ5JTJGMjcxNDM4JTJGYXJ0Y2xWaWV3LmRvJTNG",
+      "room": "2-108",
+      "source_periods": [
+        4
+      ]
+    },
+    {
+      "semester": "2026-2",
+      "campus": "세종",
+      "course_code": "HWP-38ff4f4a7870",
+      "section": "-",
+      "course_name": "행정학특강",
+      "instructor": "조현구",
+      "weekday": 4,
+      "starts_at": "13:00",
+      "ends_at": "13:50",
+      "valid_from": "2026-09-01",
+      "valid_until": "2026-12-18",
+      "source_url": "https://spa.korea.ac.kr/spa/4479/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGc3BhJTJGMTQ5JTJGMjcxNDM4JTJGYXJ0Y2xWaWV3LmRvJTNG",
+      "room": "2-332",
+      "source_periods": [
+        5
+      ]
+    },
+    {
+      "semester": "2026-2",
+      "campus": "세종",
+      "course_code": "HWP-8b3df6fa8a85",
+      "section": "-",
+      "course_name": "시민사회와자치",
+      "instructor": "김상봉",
+      "weekday": 4,
+      "starts_at": "13:00",
+      "ends_at": "14:50",
+      "valid_from": "2026-09-01",
+      "valid_until": "2026-12-18",
+      "source_url": "https://spa.korea.ac.kr/spa/4479/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGc3BhJTJGMTQ5JTJGMjcxNDM4JTJGYXJ0Y2xWaWV3LmRvJTNG",
+      "room": "2-226",
+      "source_periods": [
+        5,
+        6
+      ]
+    },
+    {
+      "semester": "2026-2",
+      "campus": "세종",
+      "course_code": "HWP-cc5baee11c55",
+      "section": "-",
+      "course_name": "미래인재의자기경영과리더십개발",
+      "instructor": "오정록",
+      "weekday": 4,
+      "starts_at": "13:00",
+      "ends_at": "14:50",
+      "valid_from": "2026-09-01",
+      "valid_until": "2026-12-18",
+      "source_url": "https://spa.korea.ac.kr/spa/4479/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGc3BhJTJGMTQ5JTJGMjcxNDM4JTJGYXJ0Y2xWaWV3LmRvJTNG",
+      "room": "2-223",
+      "source_periods": [
+        5,
+        6
+      ]
+    },
+    {
+      "semester": "2026-2",
+      "campus": "세종",
+      "course_code": "HWP-5647f6d00ac1",
+      "section": "-",
+      "course_name": "인적자원개발과CDP",
+      "instructor": "오정록",
+      "weekday": 4,
+      "starts_at": "15:00",
+      "ends_at": "16:50",
+      "valid_from": "2026-09-01",
+      "valid_until": "2026-12-18",
+      "source_url": "https://spa.korea.ac.kr/spa/4479/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGc3BhJTJGMTQ5JTJGMjcxNDM4JTJGYXJ0Y2xWaWV3LmRvJTNG",
+      "room": "2-108",
+      "source_periods": [
+        7,
+        8
+      ]
+    },
+    {
+      "semester": "2026-2",
+      "campus": "세종",
+      "course_code": "HWP-729f706eaa85",
+      "section": "-",
+      "course_name": "공공선택론",
+      "instructor": "조현구",
+      "weekday": 4,
+      "starts_at": "15:00",
+      "ends_at": "16:50",
+      "valid_from": "2026-09-01",
+      "valid_until": "2026-12-18",
+      "source_url": "https://spa.korea.ac.kr/spa/4479/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGc3BhJTJGMTQ5JTJGMjcxNDM4JTJGYXJ0Y2xWaWV3LmRvJTNG",
+      "room": "2-226",
+      "source_periods": [
+        7,
+        8
+      ]
+    },
+    {
+      "semester": "2026-2",
+      "campus": "세종",
+      "course_code": "HWP-0d08899256e1",
+      "section": "64",
+      "course_name": "창업과진로",
+      "instructor": "강영철",
+      "weekday": 4,
+      "starts_at": "17:00",
+      "ends_at": "17:50",
+      "valid_from": "2026-09-01",
+      "valid_until": "2026-12-18",
+      "source_url": "https://spa.korea.ac.kr/spa/4479/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGc3BhJTJGMTQ5JTJGMjcxNDM4JTJGYXJ0Y2xWaWV3LmRvJTNG",
+      "room": "2-225",
+      "source_periods": [
+        9
+      ]
+    },
+    {
+      "semester": "2026-2",
+      "campus": "세종",
+      "course_code": "HWP-5b62a309e02e",
+      "section": "61",
+      "course_name": "창업과진로",
+      "instructor": "김상봉",
+      "weekday": 4,
+      "starts_at": "17:00",
+      "ends_at": "17:50",
+      "valid_from": "2026-09-01",
+      "valid_until": "2026-12-18",
+      "source_url": "https://spa.korea.ac.kr/spa/4479/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGc3BhJTJGMTQ5JTJGMjcxNDM4JTJGYXJ0Y2xWaWV3LmRvJTNG",
+      "room": "2-226",
+      "source_periods": [
+        9
+      ]
+    },
+    {
+      "semester": "2026-2",
+      "campus": "세종",
+      "course_code": "HWP-6e047caa7d3e",
+      "section": "63",
+      "course_name": "창업과진로",
+      "instructor": "조현구",
+      "weekday": 4,
+      "starts_at": "17:00",
+      "ends_at": "17:50",
+      "valid_from": "2026-09-01",
+      "valid_until": "2026-12-18",
+      "source_url": "https://spa.korea.ac.kr/spa/4479/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGc3BhJTJGMTQ5JTJGMjcxNDM4JTJGYXJ0Y2xWaWV3LmRvJTNG",
+      "room": "2-421",
+      "source_periods": [
+        9
+      ]
+    },
+    {
+      "semester": "2026-2",
+      "campus": "세종",
+      "course_code": "HWP-ea067ddda119",
+      "section": "62",
+      "course_name": "창업과진로",
+      "instructor": "임준형",
+      "weekday": 4,
+      "starts_at": "17:00",
+      "ends_at": "17:50",
+      "valid_from": "2026-09-01",
+      "valid_until": "2026-12-18",
+      "source_url": "https://spa.korea.ac.kr/spa/4479/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGc3BhJTJGMTQ5JTJGMjcxNDM4JTJGYXJ0Y2xWaWV3LmRvJTNG",
+      "room": "2-329",
+      "source_periods": [
+        9
+      ]
+    },
+    {
+      "semester": "2026-2",
+      "campus": "세종",
+      "course_code": "HWP-5647f6d00ac1",
+      "section": "-",
+      "course_name": "인적자원개발과CDP",
+      "instructor": "오정록",
+      "weekday": 5,
+      "starts_at": "09:00",
+      "ends_at": "09:50",
+      "valid_from": "2026-09-01",
+      "valid_until": "2026-12-18",
+      "source_url": "https://spa.korea.ac.kr/spa/4479/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGc3BhJTJGMTQ5JTJGMjcxNDM4JTJGYXJ0Y2xWaWV3LmRvJTNG",
+      "room": "2-108",
+      "source_periods": [
+        1
+      ]
+    },
+    {
+      "semester": "2026-2",
+      "campus": "세종",
+      "course_code": "HWP-9213f71c55c5",
+      "section": "-",
+      "course_name": "형사소송법",
+      "instructor": "박요나",
+      "weekday": 5,
+      "starts_at": "09:00",
+      "ends_at": "11:50",
+      "valid_from": "2026-09-01",
+      "valid_until": "2026-12-18",
+      "source_url": "https://spa.korea.ac.kr/spa/4479/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGc3BhJTJGMTQ5JTJGMjcxNDM4JTJGYXJ0Y2xWaWV3LmRvJTNG",
+      "room": "2-226",
+      "source_periods": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "semester": "2026-2",
+      "campus": "세종",
+      "course_code": "HWP-f4dd3fd82045",
+      "section": "-",
+      "course_name": "정책학특강",
+      "instructor": "이수연",
+      "weekday": 5,
+      "starts_at": "12:00",
+      "ends_at": "12:50",
+      "valid_from": "2026-09-01",
+      "valid_until": "2026-12-18",
+      "source_url": "https://spa.korea.ac.kr/spa/4479/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGc3BhJTJGMTQ5JTJGMjcxNDM4JTJGYXJ0Y2xWaWV3LmRvJTNG",
+      "room": "2-226",
+      "source_periods": [
+        4
+      ]
+    },
+    {
+      "semester": "2026-2",
+      "campus": "세종",
+      "course_code": "HWP-729f706eaa85",
+      "section": "-",
+      "course_name": "공공선택론",
+      "instructor": "조현구",
+      "weekday": 5,
+      "starts_at": "13:00",
+      "ends_at": "13:50",
+      "valid_from": "2026-09-01",
+      "valid_until": "2026-12-18",
+      "source_url": "https://spa.korea.ac.kr/spa/4479/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGc3BhJTJGMTQ5JTJGMjcxNDM4JTJGYXJ0Y2xWaWV3LmRvJTNG",
+      "room": "2-226",
+      "source_periods": [
+        5
+      ]
+    },
+    {
+      "semester": "2026-2",
+      "campus": "세종",
+      "course_code": "HWP-99d8dea26ecb",
+      "section": "-",
+      "course_name": "법학통론",
+      "instructor": "박요나",
+      "weekday": 5,
+      "starts_at": "13:00",
+      "ends_at": "15:50",
+      "valid_from": "2026-09-01",
+      "valid_until": "2026-12-18",
+      "source_url": "https://spa.korea.ac.kr/spa/4479/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGc3BhJTJGMTQ5JTJGMjcxNDM4JTJGYXJ0Y2xWaWV3LmRvJTNG",
+      "room": "2-332",
+      "source_periods": [
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "semester": "2026-2",
+      "campus": "세종",
+      "course_code": "HWP-38ff4f4a7870",
+      "section": "-",
+      "course_name": "행정학특강",
+      "instructor": "조현구",
+      "weekday": 5,
+      "starts_at": "14:00",
+      "ends_at": "15:50",
+      "valid_from": "2026-09-01",
+      "valid_until": "2026-12-18",
+      "source_url": "https://spa.korea.ac.kr/spa/4479/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGc3BhJTJGMTQ5JTJGMjcxNDM4JTJGYXJ0Y2xWaWV3LmRvJTNG",
+      "room": "2-226",
+      "source_periods": [
+        6,
+        7
+      ]
+    }
+  ]
+}
